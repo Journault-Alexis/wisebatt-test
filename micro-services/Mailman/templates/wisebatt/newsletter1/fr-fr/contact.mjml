@@ -1,0 +1,23 @@
+<mjml>
+  <mj-body>
+
+    <mj-include path="./src/templates/wisebatt/header.mjml" />
+
+    <mj-section background-color="#fafafa">
+      <mj-column>
+        <mj-text color="#525252">
+          <strong> Voici un message venant de la plateforme Wisebatt :</strong>
+        </mj-text>
+        <mj-text color="#525252">
+          Compte de l'expéditeur : {{ expeditorName }}
+        </mj-text>
+          <mj-text color="#525252">
+          random number : {{ randomNumber }}
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-include path="./src/templates/wisebatt/footer.mjml" />
+
+  </mj-body>
+</mjml>

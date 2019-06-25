@@ -1,0 +1,35 @@
+﻿<div class="col-md-3 col-md-offset-12">
+    <h3>Home</h1>
+    <p>{{ user.name }} You're logged</p>
+    <p><a href="#/login">Logout</a></p>
+
+    <button class="btn btn-primary" ng-click="vm.pythonLauncher()" >Python script</button>
+    <p>{{ python }}</p>
+  
+</div>
+
+<div class="col-md-3 col-md-offset-3">
+
+    <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"  ng-click="vm.filterParticpants('id', 25)">id</th>
+                <th scope="col" ng-click="vm.filterParticpants('first_name', 25)">firstname</th>
+                <th scope="col" ng-click="vm.filterParticpants('last_name', 25)">lastname</th>
+                <th scope="col" ng-click="vm.filterParticpants('email', 25)" >email</th>
+                <th scope="col">ip</th>
+                <th scope="col">gender</th>
+              </tr>
+            </thead>
+            <tbody>
+                    <tr ng-repeat="participant in participants">
+                            <th scope="row">{{ participant.id }}</th>
+                            <td>{{ participant.first_name }}</td>
+                            <td>{{ participant.last_name }}</td>
+                            <td>{{ participant.email }}</td>
+                            <td>{{ participant.ip_address }}</td>
+                            <td>{{ participant.gender }}</td>
+                          </tr>
+            </tbody>
+          </table>
+</div>

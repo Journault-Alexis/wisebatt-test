@@ -1,0 +1,5 @@
+{
+  "jwtPrivateKey": "unsecureKey",
+  "db": "mongodb://localhost/wisebatt",
+  "port": "3902"
+}
